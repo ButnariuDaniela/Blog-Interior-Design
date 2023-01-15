@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  background-image: url("cover.jpg");
+  background-size: cover;
+}
+
+header {
+  /* background-color: #e6ffff; */
+  background-blend-mode: luminosity;
+  display: flex;
+  font-family: Bellefair regular;
+  padding-right:0;
+  padding-left: 2rem;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+#logo {
+  width: 20%;
+  height: auto;
+  transition: all 2s;
+  position: sticky;
+  /* left: 0; */
+}
+
+#logo:hover {
+  transform: rotateY(360deg);
+}
+
+#search {
+  width: 30%;
+  height: auto;
+  display: inline block;
+  font-size: 120%;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  align-self: flex-end;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    display: none;
+  }
+  #search {
+    padding-left: 0rem;
+  }
+  header {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .submb {
+    font-size: 1rem;
+  }
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-left: 0%;
+  padding-right: 15%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 200%;
+  font-family: Rokkitt;
+  background-color: #008080;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Rokkitt;
+}
+
+.submb {
+  font-family: Rokkitt;
+  background-color: #008080;
+  color: #e6ffff;
+  padding: 0.5rem;
+  font-size: 3rem;
+  border: none;
+}
+
+.subm {
+  position: relative;
+  display: inline-block;
+}
+
+.subm-c {
+  display: none;
+  position: absolute;
+  background-color: #00b3b3;
+  min-width: 180px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.subm-c a {
+  color: #3d5c5c;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.subm-c a:hover {
+  background-color: #e6ffff;
+}
+
+.subm:hover .subm-c {
+  display: block;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding-top: 15%;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: 'Dancing Script';
+}
+
+
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.intro {
+  padding-top: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro img {
+  width: 50%;
+  height: auto;
+}
+
+.casette-out {
+  border: 5px solid rgb(75, 94, 97);
+  padding: 0;
+}
+.casette {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-around;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  background-color: #e6f5f5;
+  box-shadow: 20px 20px 50px 10px rgb(243, 245, 246) inset;
+}
+
+.casette h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Rokkitt;
+}
+.casette span {
+  text-align: center;
+  font-family: Rokkitt;
+}
+.casette-line {
+  padding-top: 30px;
+  border-bottom: 2px solid #c7dbdb;
+}
+.post {
+  padding-top: 10%;
+}
+
+span {
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.button-like {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+
+.button-like #show-counter {
+  padding-left: 1rem;
+}
+
+#trend {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+h3 {
+  font-family: 'Permanent Marker' regular;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.buttons {
+  font-size: 1rem;
+  font-family: Permanent Marker;
+  background-color: #008080;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-color: #3d5c5c;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  padding: 2% 10%;
+}
+
+.data {
+  border: 2px solid #3d5c5c;
+  padding: 2%;
+}
+
+#opinion {
+  padding: 2% 10% 0% 10%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#submit-button {
+  display: inline-block;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 70% 1fr;
+  background-color: #3d5c5c;
+  color: #e6ffff;
+  padding: 2% 5%;
+  font-size: 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 30% 1fr 1fr;
+  gap: 15px 5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.5rem;
+}
+
+.footer-links a:link {
+  text-decoration: none;
+  color: #e6ffff;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-content h3 {
+  padding-bottom: 1.5rem;
+  color: rgb(202, 147, 102);
+}
+
+.footer-l {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-l ul {
+  list-style: none;
+}
+
+.footer-l .map img {
+  width: 2rem;
+  height: auto;
+}
+
+.footer-l p {
+  font-size: 1.5rem;
+  justify-self: center;
+}
+
+footer span {
+  font-size: 1rem;
+  display: inline-block;
+  padding-top: 3rem;
+}
+
+footer h3 {
+    padding-top: 0%;
+}
